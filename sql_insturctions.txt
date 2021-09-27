@@ -1,0 +1,34 @@
+**Creating a table**
+
+create table movies(
+movie_name varchar(40),
+lead_actor varchar(40),
+lead_actress varchar(40),
+year_of_release int,
+director varchar(40),
+primary key(movie_name)
+);
+
+
+**Inserting values**
+
+insert into movies values('Titanic','Leonardo DiCaprio','Kate Winslet',1997,'James Cameron');
+insert into movies values('The Notebook','Ryan Gosling','Rachel McAdams',2004,'Nick Cassavetes');
+insert into movies values('Dilwale Dulhania Le Jayenge','Shah Rukh Khan','Kajol',1995,'Aditya Chopra');
+insert into movies values('Wonder Woman',null,'Gal Gadot',2017,'Patty Jenkins');
+insert into movies values('The Pursuit of Happyness','Will Smith',null,2006,'Gabriele Muccino');
+insert into movies values('After','Hero Fiennes Tiffin','Josephine Langford',2019,'Jenny Gage');
+insert into movies values('The Fault in Our Stars','Ansel Eglort','Shailene Woodley',2014,'Josh Boone');
+insert into movies values('Five Feet Apart','Cole Sprouse','Haley Lu Richardson',2019,'Justin Baldoni');
+
+
+**A simple SELECT statement to query all rows from the Movies table.**
+
+select *
+from movies;
+
+**A query to select movies based on the actor's name.**
+
+select movie_name 
+from movies
+where lead_actor='Ryan Gosling';
